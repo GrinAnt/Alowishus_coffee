@@ -1,0 +1,28 @@
+// MEDIA QUERIES
+
+// при Mobile First в медиа запросе используется min-width
+// при Desktop First в медиа запросе используется max-width
+
+@mixin full_screens {
+  @media screen and (min-width: $big_computer) {
+    @content;
+  }
+}
+
+@mixin computers {
+  @media screen and (min-width: $computer) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (min-width: $phone) {
+    @content;
+  }
+}
